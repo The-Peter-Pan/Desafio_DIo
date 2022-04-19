@@ -1,0 +1,36 @@
+/ comentario 1
+
+//Tipos de dados  (GML, Game Maker Leanguage)	 
+//Texto - String - sempre será entre aspas 
+//Númerico - numeros de forma geral - não tem aspas 
+
+//Variaveis - Palavras que guardam informações 
+//Exmplo com valor string
+
+ //Snake Case Usa_Undekine_para_separar_nomes
+ //O Game maker diferencia letras maiusculas de minusculas por tanto prestar atenção
+ 
+ //Tipo de dado boleano - Só aceita dois tipos de valores
+ // verdadeiro ou falso, true or false, 1 ou 0 sim ou não - Binarios
+ //TRUE = 1 FALSE =  0 
+ 
+ //pegando dados do usuario
+ 
+ //como add dados do usuario
+ nome = get_string("Digite seu nome", "Rimuru");
+  idade= get_integer("Digite sua idade" , 0 );
+  altura= get_integer("Coloque sua altura" , 0);
+  Peso = get_integer("Coloque seu peso" , 0);
+  //Usar string para nome e ineger para numeros
+ show_message("O seu nome é?");
+ show_message(nome);  
+ show_message("Você tem?");
+  show_message(idade);
+show_message("O seu peso é?");
+show_message(Peso);
+show_debug_message("Sua altura é?");
+show_debug_message(altura);
+ 
+ //perguntas de sim ou não 
+ quer_aprender_a_matar = show_question("vamos aprender a matar?")
+ show_message( quer_aprender_a_matar);

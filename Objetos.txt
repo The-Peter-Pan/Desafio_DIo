@@ -1,0 +1,26 @@
+Fazendo movimentação
+y = y + 5;
+y = y - 5;
+x = x + 5;
+x = x - 5;
+
+//checando se saiu pela esquerda da room
+// vou ver se meu x é igual a -32
+if (x <= -32)
+{
+//vou trazer para o meio da room
+//colocando meu x em 640
+x = 640
+} 
+if (x >= 1376)
+{
+	x = 640
+}
+if (y >= 800)
+{
+	y = 384
+}
+if (y <= - 32)
+{
+	y = 384
+}

@@ -1,0 +1,120 @@
+// Dados aritimeticos - Usa para relizar contas
+/*lista dos operados
++ = adição
+- = subtração
+* = multiplicação
+/ = divisão
+% = resto da divisão
+*/
+
+vida= 5+5
+show_message(vida)
+//como subtrarir a vida do personagem
+vida = vida - 3;
+show_message(vida);
+
+//calculando a media
+
+conta = ( 10 + 5 + 8 + 6) / 4
+show_message(conta)  
+//Operadores relacionais - Eles serves para fazer comparações, ver relações - Possuem retorno - Boleano 
+/* LISTINHA DOS OPERADORES
+
+> = Maior do que - Checa se o valor da esquerda é maior que o valor da direita.
+< = Menor do que - Checa se o valor da esquerda é menor que o valor da direita.
+>= = Maior ou igual a - Checa se o valor da esquerda é maior ou igual ao valor da direita
+== = Igual a - Checa se o valor da esquerda é igual ao valor da direita.
+!= = Diferente de - Checa se o valor da esquerda é diferente do valor da direita.
+*/
+show_message(10>10)
+
+//Operadores Unarios - Só pode aumentar ou diminuir em 1
+/* Listinnha dos operadores
+++ = Incremento em 1
+-- = Decremento em 1
+*/
+vida = 10 ;
+show_message(vida);
+vida ++; 
+show_message(vida);
+
+//Função condicional, ela checa se uma condição é verdadeira ou falsa e então executa uma ação
+//Se eu tiver dinheiro ENTÂO eu como cachorro quente
+/* SIXTASE DA FUNÇÃo
+if (condição)
+{
+    ações
+}
+*/
+
+//Exmplo
+gosta_de_pizza = show_question("Você gosta de pizza?");
+
+//Se ela gosta de pizza, então vou dizer 'Eu tambem gosto"
+if (gosta_de_pizza == true)
+{
+	show_message("Eu também gosto");
+}
+
+//Exercicio
+
+//criando 4 variaveis de nota
+nota1 = get_integer("Digite sua primeira nota",	0);
+nota2 = get_integer("Digite sua primeira nota",	0);
+nota3 = get_integer("Digite sua primeira nota",	0);
+nota4 = get_integer("Digite sua primeira nota",	0);
+
+//media
+media = (nota1 + nota2 + nota3 + nota4) / 4;
+
+//checAR A VARIAVEL NOTA MINIMA	VALOR 7 
+nota_minima = 7;
+
+//checar se a media é maior ou igual a nota minima
+if (media >= nota_minima)
+{
+	show_message("você foi aprovado");
+}
+else	
+{
+	show_message("você foi reprovado");
+}5
+
+show_message("até o proximo ano");
+
+//Exercicio
+idade = get_integer("Digite a sua idade", 0);
+idade_minima = 18
+
+if (idade >= idade_minima)
+{
+	show_message("Bem vindo");
+}
+else
+{
+	show_message("Não pode ver o conteudo do site");
+}
+
+//OPERADORES LOGÍCOS - Retorno Boleano
+/*Listinha de Operadores 
+&&, and	- E ele checa se os valores são verdaderos, se sim ele retorna true, caso contrario retorna false
+Ele pode checar divertsos valores e se ao menos um deles for false, ele retorna false
+||, or - OU, ele chega se ao menos um dos valores é verdadeiros, se sim, ele retorna true
+!, not - não, ele inverte o valor, se ele é true ele vai pra false e se ele é false ele vai pra true
+
+ser maiorde idade OU estar dispostoa mentir a idade
+Eu ter dinheiro E estar com fome
+
+*/
+
+idade = get_integer("Qual a sua idade?", 0);
+mentir_idade = show_question("Você está disposto a mentir sua idade?");
+
+if  (idade >= 18 || mentir_idade)
+{
+		show_message("Bem vindo");
+}
+else
+{
+	show_message("Não sabe mentir?");
+}
